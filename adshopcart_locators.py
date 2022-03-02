@@ -20,4 +20,6 @@ address = fake.street_address()
 province = fake.province_abbr()
 postalcode = fake.postalcode()
 
+description = fake.sentence(nb_words=25)
+
 
