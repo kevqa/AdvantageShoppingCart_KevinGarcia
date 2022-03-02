@@ -1,4 +1,14 @@
 import unittest
-import moodle_methods as methods
-import moodle_locators as locators
+import adshopcart_methods as methods
+import adshopcart_locators as locators
 
+class adshopcartPositiveTestCases(unittest.Testcase):
+
+    @staticmethod
+    def Advantage_Shopping():
+        methods.setUp()
+        methods.create_new_user()
+        methods.name_and_cart()
+        methods.log_out_log_in()
+        methods.delete_account_retry_login()
+        methods.tearDown()
