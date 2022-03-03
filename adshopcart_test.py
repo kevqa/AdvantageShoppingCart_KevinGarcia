@@ -2,10 +2,10 @@ import unittest
 import adshopcart_methods as methods
 import adshopcart_locators as locators
 
-class adshopcartPositiveTestCases(unittest.Testcase):
+class adshopcartPositiveTestCases(unittest.TestCase):
 
     @staticmethod
-    def Advantage_Shopping():
+    def test_advantage_shopping():
         methods.setUp()
         methods.create_new_user()
         methods.name_and_cart()
